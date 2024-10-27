@@ -1,0 +1,48 @@
+# Ignore arquivos do Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore arquivos de ambiente virtual
+env/
+venv/
+ENV/
+.VENV/
+.venv
+
+# Ignore arquivos de configuração do ambiente
+*.env
+*.DS_Store
+
+# Ignore arquivos de log
+*.log
+
+# Ignore banco de dados local
+db.sqlite3
+db.sqlite3-journal
+
+# Ignore arquivos do Django
+/media/
+*.pot
+*.py[cod]
+
+# Ignore configurações do sistema
+*.swp
+*~
+
+# Ignore diretórios de compilação
+build/
+dist/
+*.egg-info/
+
+# Ignore arquivos estáticos e de migração
+/staticfiles/
+/static/
+/media/
+/migrations/
+
+# Ignore arquivos de IDEs e editores de texto
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
