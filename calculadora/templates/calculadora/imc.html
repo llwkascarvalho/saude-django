@@ -9,7 +9,7 @@
 {% block content %}
     <h1>Calculadora de IMC</h1>
 
-    <form id="imcForm">
+    <form id="imcForm" onsubmit="event.preventDefault(); calcularIMC();">
         <label class="label" for="peso">Peso (kg):</label>
         <input class="input" type="number" id="peso" name="peso" step="0.1" required>
         <br><br>
@@ -27,4 +27,8 @@
         <li><strong>Obesidade:</strong> IMC 30 ou acima</li>
     </ul>
 
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'calculadora/js/imc.js' %}"></script>
 {% endblock %}
